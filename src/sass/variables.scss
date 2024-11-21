@@ -1,0 +1,29 @@
+$btn-font-weight: 400;
+$dialog-border-radius: 8px;
+
+$color-text: #333333;
+$color-bg: #eeeeee;
+$color-text-muted: #6c757d;
+$color-label: #999999;
+$color-border: #cccccc;
+
+@mixin large-field {
+  .v-input {
+    &__icon {
+      padding-top: 20px;
+      padding-right: 15px;
+    }
+
+    input {
+      min-height: 56px;
+    }
+
+    .v-label {
+      top: 16px;
+
+      &--active {
+        top: 8px;
+      }
+    }
+  }
+}

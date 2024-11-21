@@ -1,0 +1,69 @@
+.theme--light {
+  &.v-text-field {
+    font-size: 14px;
+  }
+
+  &.v-text-field > .v-input__control > .v-input__slot:before {
+    border-color: $color-border;
+  }
+
+  &.v-label {
+    font-size: 14px;
+    color: $color-label;
+  }
+
+  &.v-input {
+    &__slot {
+      font-size: 14px;
+    }
+  }
+
+  &.v-pagination {
+    .v-pagination__item {
+      color: $color-text-muted;
+
+      &--active {
+        color: white;
+      }
+    }
+
+    .v-pagination__more {
+      color: $color-text-muted;
+    }
+
+    .v-pagination__navigation {
+      .theme--light.v-icon {
+        color: $color-text-muted;
+      }
+    }
+  }
+}
+
+.v-pagination {
+  &__item {
+    font-size: 10px;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+
+    &:not(&--active) {
+      box-shadow: none;
+    }
+  }
+
+  &__more {
+    padding-bottom: 4px;
+  }
+
+  &__navigation {
+    font-size: 10px;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    box-shadow: none;
+
+    .v-icon {
+      font-size: 16px;
+    }
+  }
+}
